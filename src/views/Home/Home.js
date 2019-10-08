@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import Layout from '../../layout'
+import GnomesList from '../../components/GnomesList'
 
 const Home = () => {
   return (
@@ -9,11 +9,7 @@ const Home = () => {
       <Layout.Header />
       <Layout.Main>
         <h1>Home</h1>
-        <ul>
-          <li>
-            <Link to="/gnome/1">gnome 1</Link>
-          </li>
-        </ul>
+        <GnomesList />
       </Layout.Main>
     </Layout.Wrapper>
   )
