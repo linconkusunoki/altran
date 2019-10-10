@@ -21,9 +21,11 @@ const GnomeProfile = ({ id }) => {
 
   return (
     <S.Wrapper>
+      <S.BackLink to="/">Home</S.BackLink> / Gnome Profile
       <S.PersonalInfo>
         <Avatar thumbnail={gnome.thumbnail} variant="profile" />
         <S.WrapperInfo>
+          <S.Title>Gnome Profile</S.Title>
           <S.Name>{gnome.name}</S.Name>
           <S.Info>
             <div>Age:</div>

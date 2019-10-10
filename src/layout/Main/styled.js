@@ -1,11 +1,14 @@
 import styled from 'styled-components'
+import bg from '../../images/background.png'
 
 export const Main = styled.main`
-  margin: 0 auto;
+  margin: 90px auto 0;
   overflow: hidden;
 
   :before {
-    background: #0e1e24;
+    background: #0e1e24 url(${bg}) no-repeat;
+    background-position: center;
+    background-size: cover;
     content: ' ';
     display: block;
     height: 264px;
@@ -14,6 +17,10 @@ export const Main = styled.main`
     top: 0;
     width: 100%;
     z-index: 0;
+
+    @media (min-width: 1178px) {
+      background-position: center -620px;
+    }
   }
 `
 

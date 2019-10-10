@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   * { box-sizing: border-box }
   body { margin: 0; min-height: 100vh; font-family: 'Source Sans Pro', sans-serif; }
   img { max-width: 100% }
-  #root { background-color: #f2f5f7 }
+  #root { background-color: #f1edff }
 `
 
 function App() {

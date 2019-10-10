@@ -67,10 +67,23 @@ export const Info = styled.div`
 export const FiltersWrapper = styled.div`
   margin-bottom: 24px;
 
+  > div {
+    display: flex;
+    flex: 1;
+  }
+
   @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
+
+    > div {
+      margin-left: 16px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 `
 
@@ -82,10 +95,6 @@ export const Search = styled.input`
   width: 100%;
   background: #f1f1f1;
   flex: 1;
-
-  @media (min-width: 768px) {
-    flex: 0.5;
-  }
 `
 
 export const SelectsWrapper = styled.div`
@@ -93,7 +102,7 @@ export const SelectsWrapper = styled.div`
 
   @media (min-width: 768px) {
     display: flex;
-    flex: 0.4;
+    flex: 0.6;
   }
 `
 

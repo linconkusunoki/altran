@@ -2,6 +2,9 @@ import React from 'react'
 
 import Select from '../Select'
 import * as S from './styled'
+import potion from '../../images/potion.svg'
+import gnome from '../../images/gnome.svg'
+import hammer from '../../images/hammer.svg'
 
 const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
   const [professions, setProfessions] = React.useState([])
@@ -45,12 +48,16 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
 
   return (
     <S.FiltersWrapper>
-      <S.Search
-        type="search"
-        placeholder="Search name"
-        onChange={handleSearch}
-      />
-      <S.SelectsWrapper>
+      <div>
+        <img src={gnome} alt="gnome" height="50" />
+        <S.Search
+          type="search"
+          placeholder="Search name"
+          onChange={handleSearch}
+        />
+      </div>
+      <div>
+        <img src={hammer} alt="hammer" height="50" />
         <Select
           title="Professions"
           name="professions"
@@ -58,6 +65,10 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
           onChange={handleChange}
           value={filters.professions}
         />
+      </div>
+
+      <div>
+        <img src={potion} alt="potion" height="50" />
         <Select
           title="Hair colors"
           name="hair_color"
@@ -65,7 +76,7 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
           onChange={handleChange}
           value={filters.hair_color}
         />
-      </S.SelectsWrapper>
+      </div>
     </S.FiltersWrapper>
   )
 }

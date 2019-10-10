@@ -7,7 +7,6 @@ const Profile = ({ match }) => {
   const { id } = match.params
   return (
     <Layout.Wrapper>
-      <Layout.Header title="Profile" />
       <Layout.Main>
         <GnomeProfile id={id} />
       </Layout.Main>
