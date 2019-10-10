@@ -4,6 +4,7 @@ import gnomesService from '../../services/gnomes'
 import useFetch from '../../hooks/useFetch'
 import GnomesFilters from './GnomesFilters'
 import Avatar from '../Avatar'
+import HairColor from '../HairColor'
 import * as S from './styled'
 
 const GnomesList = () => {
@@ -115,7 +116,7 @@ const GnomesList = () => {
               <S.InfoWrapper>
                 <S.Info>height: {gnome.height.toFixed(2)}</S.Info>
                 <S.Info>
-                  hair color: <S.Hair color={gnome.hair_color} />
+                  hair color: <HairColor color={gnome.hair_color} />
                 </S.Info>
                 <S.Info>weight: {gnome.weight.toFixed(2)}</S.Info>
                 <S.Info>age: {gnome.age}</S.Info>

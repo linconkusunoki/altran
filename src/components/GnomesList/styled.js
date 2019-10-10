@@ -64,15 +64,6 @@ export const Info = styled.div`
   }
 `
 
-export const Hair = styled.span`
-  display: inline-block;
-  vertical-align: baseline;
-  border-radius: 3px;
-  width: 24px;
-  height: 10px;
-  background: ${props => props.color};
-`
-
 export const FiltersWrapper = styled.div`
   margin-bottom: 24px;
 
