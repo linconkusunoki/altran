@@ -11,6 +11,7 @@ const Profile = ({ match }) => {
       <Layout.Main>
         <GnomeProfile id={id} />
       </Layout.Main>
+      <Layout.Footer />
     </Layout.Wrapper>
   )
 }

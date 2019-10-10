@@ -1,8 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import gnomesService from '../../services/gnomes'
 import useFetch from '../../hooks/useFetch'
+import Avatar from '../Avatar'
+import HairColor from '../HairColor'
+import Gender from '../Gender'
+
+import * as S from './styled'
 
 const GnomeProfile = ({ id }) => {
   const { isLoading, error, response: gnome } = useFetch(gnomesService.get, id)
@@ -16,63 +20,50 @@ const GnomeProfile = ({ id }) => {
   }
 
   return (
-    <Link to={`/gnome/${gnome.id}`}>
-      <fieldset>
-        <legend>{gnome.name}</legend>
-        <table>
-          <tbody>
-            <tr>
-              <td>thumbnail</td>
-              <td>
-                <figure>
-                  <img
-                    src={gnome.thumbnail}
-                    alt={gnome.name}
-                    title={gnome.name}
-                  />
-                </figure>
-              </td>
-            </tr>
-            <tr>
-              <td>age</td>
-              <td>{gnome.age}</td>
-            </tr>
-            <tr>
-              <td>weight</td>
-              <td>{gnome.weight}</td>
-            </tr>
-            <tr>
-              <td>height</td>
-              <td>{gnome.height}</td>
-            </tr>
-            <tr>
-              <td>hair color</td>
-              <td>{gnome.hair_color}</td>
-            </tr>
-            <tr>
-              <td>professions</td>
-              <td>
-                <ul>
-                  {gnome.professions.map(profession => (
-                    <li key={profession}>{profession}</li>
-                  ))}
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>friends</td>
-              <td>
-                <ul>
-                  {gnome.friends.map(friend => (
-                    <li key={friend}>{friend}</li>
-                  ))}
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </fieldset>
-    </Link>
+    <S.Wrapper>
+      <S.PersonalInfo>
+        <Avatar thumbnail={gnome.thumbnail} variant="profile" />
+        <S.WrapperInfo>
+          <S.Name>{gnome.name}</S.Name>
+          <S.Info>
+            <div>Age:</div>
+            <span>{gnome.age}</span>
+          </S.Info>
+          <S.Info>
+            <div>Weight:</div>
+            <span>{gnome.weight.toFixed(2)}</span>
+          </S.Info>
+          <S.Info>
+            <div>Height:</div>
+            <span>{gnome.height.toFixed(2)}</span>
+          </S.Info>
+          <S.Info>
+            <div>Hair color:</div>
+            <HairColor color={gnome.hair_color} />
+          </S.Info>
+          <S.Info>
+            <div>Gender:</div>
+            <Gender color={gnome.hair_color} />
+          </S.Info>
+        </S.WrapperInfo>
+      </S.PersonalInfo>
+      <S.Detail>
+        <legend>Professions</legend>
+        <ul>
+          {gnome.professions.map(profession => (
+            <li key={profession}>{profession}</li>
+          ))}
+        </ul>
+      </S.Detail>
+      <S.Detail>
+        <legend>Friends</legend>
+        <ul>
+          {gnome.friends.map(friend => (
+            <li key={friend}>{friend}</li>
+          ))}
+        </ul>
+      </S.Detail>
+    </S.Wrapper>
   )
 }
 
