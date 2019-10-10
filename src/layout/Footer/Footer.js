@@ -6,11 +6,11 @@ import Container from '../Container'
 const Footer = () => (
   <S.Footer>
     <Container>
-      Made with{' '}
+      Crafted with some{' '}
       <span role="img" aria-label="made with love">
-        ❤️
+        🧙
       </span>{' '}
-      by Lincon Kusunoki
+      summoned by Lincon Kusunoki
     </Container>
   </S.Footer>
 )
