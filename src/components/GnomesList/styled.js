@@ -70,6 +70,11 @@ export const FiltersWrapper = styled.div`
   > div {
     display: flex;
     flex: 1;
+    align-items: flex-end;
+  }
+
+  img {
+    height: 50px;
   }
 
   @media (min-width: 768px) {
@@ -83,6 +88,10 @@ export const FiltersWrapper = styled.div`
       &:first-child {
         margin-left: 0;
       }
+    }
+
+    img {
+      height: 80px;
     }
   }
 `

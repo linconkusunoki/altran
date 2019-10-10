@@ -55,6 +55,7 @@ const GnomeProfile = ({ id }) => {
           {gnome.professions.map(profession => (
             <li key={profession}>{profession}</li>
           ))}
+          {gnome.professions.length === 0 && 'Time is money friend'}
         </ul>
       </S.Detail>
       <S.Detail>
@@ -63,6 +64,7 @@ const GnomeProfile = ({ id }) => {
           {gnome.friends.map(friend => (
             <li key={friend}>{friend}</li>
           ))}
+          {gnome.friends.length === 0 && 'Stop working and go make new friends'}
         </ul>
       </S.Detail>
     </S.Wrapper>

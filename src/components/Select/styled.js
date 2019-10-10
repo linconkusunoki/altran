@@ -15,7 +15,7 @@ export const Select = styled.select`
   border: 1px solid #ddd;
   border-radius: 6px;
   width: 100%;
-  background: #f1edff;
+  background: #f1f1f1;
 `
 
 export const Label = styled.label`
