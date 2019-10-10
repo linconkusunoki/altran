@@ -1,1 +1,5 @@
 export { default as Nav } from './Nav'
+export { default as GnomesList } from './GnomesList'
+export { default as GnomeProfile } from './GnomeProfile'
+export { default as Select } from './Select'
+export { default as Avatar } from './Avatar'
