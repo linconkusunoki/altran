@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import * as S from './styled'
 
@@ -15,6 +16,12 @@ const Select = ({ title, options, value, ...rest }) => {
       </S.Select>
     </S.Wrapper>
   )
+}
+
+Select.propTypes = {
+  title: PropTypes.string,
+  options: PropTypes.array,
+  value: PropTypes.string,
 }
 
 export default Select

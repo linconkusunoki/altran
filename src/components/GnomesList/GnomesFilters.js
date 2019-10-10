@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Select from '../Select'
 import * as S from './styled'
@@ -79,6 +80,13 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
       </div>
     </S.FiltersWrapper>
   )
+}
+
+GnomesFilters.propTypes = {
+  items: PropTypes.array,
+  onFilter: PropTypes.func,
+  onSearch: PropTypes.func,
+  filters: PropTypes.object,
 }
 
 export default GnomesFilters

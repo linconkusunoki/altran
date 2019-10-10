@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import gnomesService from '../../services/gnomes'
 import useFetch from '../../hooks/useFetch'
@@ -69,6 +70,10 @@ const GnomeProfile = ({ id }) => {
       </S.Detail>
     </S.Wrapper>
   )
+}
+
+GnomeProfile.propTypes = {
+  id: PropTypes.string.isRequired,
 }
 
 export default GnomeProfile

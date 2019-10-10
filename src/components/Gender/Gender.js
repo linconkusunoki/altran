@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Gender = ({ color }) => {
   const male = ['Green', 'Red', 'Black']
@@ -15,6 +16,10 @@ const Gender = ({ color }) => {
       👩
     </span>
   )
+}
+
+Gender.propTypes = {
+  color: PropTypes.string.isRequired,
 }
 
 export default Gender
