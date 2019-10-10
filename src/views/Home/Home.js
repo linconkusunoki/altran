@@ -1,16 +1,16 @@
 import React from 'react'
 
 import Layout from '../../layout'
-import GnomesList from '../../components/GnomesList'
+import { GnomesList } from '../../components'
 
 const Home = () => {
   return (
     <Layout.Wrapper>
-      <Layout.Header />
+      <Layout.Header title="Welcome to Brastlewark" />
       <Layout.Main>
-        <h1>Home</h1>
         <GnomesList />
       </Layout.Main>
+      <Layout.Footer />
     </Layout.Wrapper>
   )
 }
