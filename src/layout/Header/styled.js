@@ -15,10 +15,36 @@ export const Content = styled.div`
 export const Title = styled.h1`
   color: #fff;
   margin: 0;
+  font-size: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
 `
 
 export const Logo = styled(Link)`
   display: block;
-  width: 80px;
+  width: 50px;
   margin-right: 24px;
+  position: relative;
+  flex-shrink: 0;
+
+  :before {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    right: -15px;
+    top: 30px;
+    transform: rotate(-25deg);
+  }
+
+  @media (min-width: 768px) {
+    width: 80px;
+
+    :before {
+      top: 50px;
+    }
+  }
 `
