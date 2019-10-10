@@ -28,6 +28,7 @@ export const Info = styled.div`
     min-width: 100px;
     text-align: right;
     margin-right: 5px;
+    width: 50%;
   }
 
   span {
@@ -41,9 +42,11 @@ export const Name = styled.h3`
   font-size: 24px;
   line-height: 30px;
   margin: 0;
+  text-align: center;
 
   @media (min-width: 768px) {
     flex-basis: 50%;
+    text-align: left;
   }
 `
 

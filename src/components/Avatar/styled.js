@@ -5,7 +5,7 @@ export const Avatar = styled.figure`
   border-radius: ${props => (props.variant === 'profile' ? '200px' : '6px')};
   width: ${props => (props.variant === 'profile' ? '200px' : '100px')};
   height: ${props => (props.variant === 'profile' ? '200px' : '70px')};
-  margin: ${props => (props.variant === 'profile' ? '0 auto' : '0')};
+  margin: ${props => (props.variant === 'profile' ? '0 auto' : '0 15px 0 0')};
   background: #ccc;
   overflow: hidden;
   position: relative;
