@@ -1,7 +1,13 @@
 import api from './api'
 
 const get = async id => {
-  const res = await api.get('/rrafols/mobile_test/master/data.json')
+  let res
+
+  try {
+    res = await api.get('/rrafols/mobile_test/master/data.json')
+  } catch (error) {
+    return error
+  }
 
   if (id) {
     const gnome = res.data.Brastlewark.find(gnome => gnome.id === parseInt(id))
