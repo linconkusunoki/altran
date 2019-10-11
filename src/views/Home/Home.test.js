@@ -1,9 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import Avatar from './'
-import img from '../../images/background.png'
+import Home from './'
 
 it('should render correctly', async () => {
-  const { container } = render(<Avatar thumbnail={img} />)
+  const { container } = render(<Home />)
   expect(container.firstChild).toMatchSnapshot()
 })

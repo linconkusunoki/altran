@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render an error message 1`] = `
+<p>
+  Error while loading gnome!
+</p>
+`;
+
+exports[`should render correctly 1`] = `
+<div
+  class="sc-bxivhb bUZGRr"
+>
+  <a
+    class="sc-bZQynM cykBRJ"
+    href="/"
+  >
+    Home
+  </a>
+   / Gnome Profile
+  <div
+    class="sc-ifAKCX iGTNyI"
+  >
+    <figure
+      class="sc-bdVaJa dTbTjr"
+    />
+    <div
+      class="sc-EHOje jEWxeX"
+    >
+      <h3
+        class="sc-htoDjs gCyVGZ"
+      >
+        Gnome Profile
+      </h3>
+      <h3
+        class="sc-dnqmqq ikpkhV"
+      >
+        Tobus Quickwhistle
+      </h3>
+      <div
+        class="sc-gzVnrw eKlHpm"
+      >
+        <div>
+          Age:
+        </div>
+        <span>
+          306
+        </span>
+      </div>
+      <div
+        class="sc-gzVnrw eKlHpm"
+      >
+        <div>
+          Weight:
+        </div>
+        <span>
+          39.07
+        </span>
+      </div>
+      <div
+        class="sc-gzVnrw eKlHpm"
+      >
+        <div>
+          Height:
+        </div>
+        <span>
+          107.76
+        </span>
+      </div>
+      <div
+        class="sc-gzVnrw eKlHpm"
+      >
+        <div>
+          Hair color:
+        </div>
+        <span
+          class="sc-htpNat hWCfcZ"
+          color="Pink"
+        />
+      </div>
+      <div
+        class="sc-gzVnrw eKlHpm"
+      >
+        <div>
+          Gender:
+        </div>
+        <span
+          aria-label="female"
+          data-testid="female"
+          role="img"
+        >
+          👩
+        </span>
+      </div>
+    </div>
+  </div>
+  <fieldset
+    class="sc-iwsKbI hZKZoG"
+  >
+    <legend>
+      Professions
+    </legend>
+    <ul>
+      <li>
+        Metalworker
+      </li>
+      <li>
+        Woodcarver
+      </li>
+      <li>
+        Stonecarver
+      </li>
+      <li>
+         Tinker
+      </li>
+      <li>
+        Tailor
+      </li>
+      <li>
+        Potter
+      </li>
+    </ul>
+  </fieldset>
+  <fieldset
+    class="sc-iwsKbI hZKZoG"
+  >
+    <legend>
+      Friends
+    </legend>
+    <ul>
+      <li>
+        Cogwitz Chillwidget
+      </li>
+      <li>
+        Tinadette Chillbuster
+      </li>
+    </ul>
+  </fieldset>
+</div>
+`;

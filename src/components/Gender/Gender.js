@@ -5,14 +5,14 @@ const Gender = ({ color }) => {
   const male = ['Green', 'Red', 'Black']
   if (male.includes(color)) {
     return (
-      <span role="img" aria-label="male">
+      <span role="img" aria-label="male" data-testid="male">
         👨
       </span>
     )
   }
 
   return (
-    <span role="img" aria-label="female">
+    <span role="img" aria-label="female" data-testid="female">
       👩
     </span>
   )

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div>
+  <main
+    class="sc-bdVaJa dnnmyP"
+  >
+    <div
+      class="sc-htpNat iiWFAZ"
+    >
+      <div
+        class="sc-bwzfXH cnlxnu"
+      >
+        <p>
+          Loading gnome...
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer
+    class="sc-bxivhb bkAgtj"
+  >
+    <div
+      class="sc-htpNat iiWFAZ"
+    >
+      Crafted with some
+       
+      <span
+        aria-label="made with love"
+        role="img"
+      >
+        🧙
+      </span>
+       
+      summoned by Lincon Kusunoki
+    </div>
+  </footer>
+</div>
+`;

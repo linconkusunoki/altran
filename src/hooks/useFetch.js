@@ -13,6 +13,7 @@ const useFetch = (fn, params) => {
         setIsLoading(false)
       } catch (error) {
         setError(error)
+        setIsLoading(false)
       }
     }
     fetchData()

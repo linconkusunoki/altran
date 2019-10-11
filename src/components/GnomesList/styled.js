@@ -75,6 +75,8 @@ export const FiltersWrapper = styled.div`
 
   img {
     height: 50px;
+    min-width: 50px;
+    margin-right: 5px;
   }
 
   @media (min-width: 768px) {

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a female 1`] = `
+<span
+  aria-label="female"
+  data-testid="female"
+  role="img"
+>
+  👩
+</span>
+`;
+
+exports[`should render correctly 1`] = `
+<span
+  aria-label="male"
+  data-testid="male"
+  role="img"
+>
+  👨
+</span>
+`;

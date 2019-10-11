@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div>
+  <div
+    class="sc-dnqmqq hUhyYx"
+  >
+    <div>
+      <img
+        alt="gnome"
+        height="50"
+        src="gnome.svg"
+      />
+      <input
+        class="sc-iwsKbI iqGaBW"
+        data-testid="search"
+        placeholder="Search name"
+        type="search"
+        value=""
+      />
+    </div>
+    <div>
+      <img
+        alt="hammer"
+        height="50"
+        src="hammer.svg"
+      />
+      <div
+        class="sc-bdVaJa iUbJjP"
+      >
+        <select
+          class="sc-bwzfXH fiTiQi"
+          data-testid="select-professions"
+          name="professions"
+        >
+          <option
+            value=""
+          >
+            Professions
+          </option>
+          <option
+            value="Metalworker"
+          >
+            Metalworker
+          </option>
+          <option
+            value="Woodcarver"
+          >
+            Woodcarver
+          </option>
+          <option
+            value="Stonecarver"
+          >
+            Stonecarver
+          </option>
+          <option
+            value=" Tinker"
+          >
+             Tinker
+          </option>
+          <option
+            value="Tailor"
+          >
+            Tailor
+          </option>
+          <option
+            value="Potter"
+          >
+            Potter
+          </option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <img
+        alt="potion"
+        height="50"
+        src="potion.svg"
+      />
+      <div
+        class="sc-bdVaJa iUbJjP"
+      >
+        <select
+          class="sc-bwzfXH fiTiQi"
+          data-testid="select-hair"
+          name="hair_color"
+        >
+          <option
+            value=""
+          >
+            Hair colors
+          </option>
+          <option
+            value="Pink"
+          >
+            Pink
+          </option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <p
+    data-testid="amount"
+  >
+    Gnomes found: 1
+  </p>
+  <div
+    class="sc-gqjmRU bbbUrX"
+    style="position: relative; height: 500px; overflow: auto; will-change: transform; direction: ltr;"
+  >
+    <div
+      style="height: 94px; width: 100%;"
+    >
+      <div
+        class="sc-bxivhb biguMO"
+        data-testid="item"
+        style="position: absolute; left: 0px; top: 0px; height: 94px; width: 100%;"
+      >
+        <a
+          class="sc-VigVT bShVlT"
+          href="/gnome/0"
+        >
+          <div
+            class="sc-ifAKCX cXCwHH"
+          >
+            <figure
+              class="sc-jTzLTM jsahtH"
+            />
+            <div
+              class="sc-EHOje jqPQKJ"
+            >
+              <h3
+                class="sc-bZQynM jkNGcG"
+              >
+                Tobus Quickwhistle
+              </h3>
+              <div
+                class="sc-gzVnrw fcOYkR"
+              >
+                <div
+                  class="sc-htoDjs mANFE"
+                >
+                  height: 
+                  107.76
+                </div>
+                <div
+                  class="sc-htoDjs mANFE"
+                >
+                  hair color: 
+                  <span
+                    class="sc-jzJRlG ekAJnd"
+                    color="Pink"
+                  />
+                </div>
+                <div
+                  class="sc-htoDjs mANFE"
+                >
+                  weight: 
+                  39.07
+                </div>
+                <div
+                  class="sc-htoDjs mANFE"
+                >
+                  age: 
+                  306
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

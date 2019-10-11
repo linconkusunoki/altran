@@ -107,7 +107,7 @@ const GnomesList = () => {
   const Row = ({ index, style }) => {
     const gnome = list[index]
     return (
-      <S.Row style={style}>
+      <S.Row style={style} data-testid="item">
         <S.Link to={`/gnome/${gnome.id}`}>
           <S.Card>
             <Avatar thumbnail={gnome.thumbnail} />
@@ -136,7 +136,9 @@ const GnomesList = () => {
         onSearch={handleSearch}
         filters={filters}
       />
-      {size === 0 ? 'No gnome found :(' : `Gnomes found: ${size}`}
+      <p data-testid="amount">
+        {size === 0 ? 'No gnome found :(' : `Gnomes found: ${size}`}
+      </p>
       <S.List height={500} itemCount={size} itemSize={94}>
         {Row}
       </S.List>

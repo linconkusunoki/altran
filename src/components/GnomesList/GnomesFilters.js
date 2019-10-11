@@ -10,6 +10,7 @@ import hammer from '../../images/hammer.svg'
 const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
   const [professions, setProfessions] = React.useState([])
   const [hairColors, setHairColors] = React.useState([])
+  const [searchValue, setSearchValue] = React.useState('')
 
   React.useEffect(() => {
     let newProfessions = []
@@ -44,6 +45,7 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
   }
 
   const handleSearch = e => {
+    setSearchValue(e.target.value)
     onSearch(e.target.value)
   }
 
@@ -55,6 +57,8 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
           type="search"
           placeholder="Search name"
           onChange={handleSearch}
+          value={searchValue}
+          data-testid="search"
         />
       </div>
       <div>
@@ -65,6 +69,7 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
           options={professions}
           onChange={handleChange}
           value={filters.professions}
+          data-testid="select-professions"
         />
       </div>
 
@@ -76,6 +81,7 @@ const GnomesFilters = ({ items, onFilter, onSearch, filters }) => {
           options={hairColors}
           onChange={handleChange}
           value={filters.hair_color}
+          data-testid="select-hair"
         />
       </div>
     </S.FiltersWrapper>
