@@ -1,5 +1,5 @@
 # Altran Front-end Test (React)
-You can check the code running [on this link](https://github.com/linconkusunoki/altran)
+You can check the code running [on this link](https://altran-lincon-test.netlify.com/)
 ## What I've done?
 
 - First of all I like to set the code patterns with `Prettier`, `ESLint` and `EditorConfig`
